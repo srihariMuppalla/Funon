@@ -1,0 +1,168 @@
+/* Home.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .app {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .header {
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .header p {
+    margin: 0;
+    color: #888;
+  }
+  
+  .header-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .header-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .participants {
+    flex: 1;
+    overflow-y: auto;
+  }
+  
+  .participants h2 {
+    font-size: 16px;
+    margin: 0 0 10px;
+  }
+  
+  .participants ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .participants li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .video-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .video-main {
+    position: relative;
+  }
+  
+  .video-main img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .video-name {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .video-thumbnails {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .video-thumbnails img {
+    border-radius: 10px;
+    margin-right: 10px;
+  }
+  
+  .end-meeting {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .chat {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .chat h2 {
+    font-size: 16px;
+    margin: 0 0 10px;
+  }
+  
+  .messages {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+  }
+  
+  .message strong {
+    display: block;
+  }
+  
+  .chat input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  @media (max-width: 768px) {
+    .app {
+      flex-direction: column;
+    }
+    
+    .sidebar {
+      width: 100%;
+      order: 1;
+    }
+  
+    .main-content {
+      order: 2;
+    }
+  }
+  
